@@ -9,7 +9,7 @@ var so1 = document.querySelector(".so1")
 var so2 = document.querySelector(".so2")
 var so3 = document.querySelector(".so3")
 /*Dãy phím 5*/
-var bang = document.querySelector("bang")
+var Bang = document.querySelector(".bang")
 
 /**/ 
 var dau = document.querySelectorAll(".dau")
@@ -19,8 +19,10 @@ var dauphay = document.querySelector(".dauphay")
 
 var Delete = document.querySelector(".delete")
 
+var Savenumber = document.querySelector(".savenumber")
 
 Deleteall.onclick = function () {
+    Savenumber.innerHTML = ""
     content.innerText = ""
     Deleteall.style.backgroundColor = "red"
     setTimeout(function(){
@@ -60,6 +62,7 @@ dauphay.onclick = function () {
 }
 
 Delete.onclick = function () {
+    Savenumber.innerHTML = ""
     var contenthient = Array.from(content.innerHTML)
     contenthient.splice(contenthient.length - 1,1)
 
@@ -70,3 +73,10 @@ Delete.onclick = function () {
         Delete.style.backgroundColor = "#979797"
     }, 100);
 }
+
+Bang.onclick = function(){
+    Savenumber.innerHTML = content.innerHTML + ' ='
+    content.innerHTML = eval(content.innerHTML)
+}
+
+
