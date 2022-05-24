@@ -1,0 +1,104 @@
+
+/*Dãy phím đầu*/
+var Deleteall = document.querySelector(".deleteall")
+var content = document.querySelector(".contentshowup")
+var hint = document.querySelector(".hint")
+var chia = document.querySelector(".chia")
+
+/*Dãy phím 2*/
+var nhan = document.querySelector(".nhan")
+var so7 = document.querySelector(".so7")
+var so8 = document.querySelector(".so8")
+var so9 = document.querySelector(".so9")
+/*Dãy phím 3*/
+var tru = document.querySelector(".tru")
+var so4 = document.querySelector(".so4")
+var so5 = document.querySelector(".so5")
+var so6 = document.querySelector(".so6")
+/*Dãy phím 4*/
+var cong = document.querySelector(".cong")
+var so1 = document.querySelector(".so1")
+var so2 = document.querySelector(".so2")
+var so3 = document.querySelector(".so3")
+/*Dãy phím 5*/
+var phay = document.querySelector(".phay")
+var bang = document.querySelector("bang")
+var so0 = document.querySelector(".so0")
+
+Deleteall.onclick = function () {
+    content.innerText = ""
+}
+
+so0.onclick = function() {
+    var contenthientai = content.innerText
+    content.innerText = contenthientai + "0"
+}
+so1.onclick = function() {
+    var contenthientai = content.innerText  
+    content.innerText = contenthientai + "1"
+}
+so2.onclick = function() {
+    var contenthientai = content.innerText
+    content.innerText = contenthientai + "2"
+}
+so3.onclick = function() {
+    var contenthientai = content.innerText
+    content.innerText = contenthientai + "3"
+}
+so4.onclick = function() {
+    var contenthientai = content.innerText
+    content.innerText = contenthientai + "4"
+}
+so5.onclick = function() {
+    var contenthientai = content.innerText
+    content.innerText = contenthientai + "5"
+}
+so6.onclick = function() {
+    var contenthientai = content.innerText
+    content.innerText = contenthientai + "6"
+}
+so7.onclick = function() {
+    var contenthientai = content.innerText
+    content.innerText = contenthientai + "7"
+}
+so8.onclick = function() {
+    var contenthientai = content.innerText
+    content.innerText = contenthientai + "8"
+}
+so9.onclick = function() {
+    var contenthientai = content.innerText
+    content.innerText = contenthientai + "9"
+}
+
+
+chia.onclick = function() {
+    var contenthientai = content.innerText
+    content.innerText = contenthientai + "/"
+}
+nhan.onclick = function() {
+    var contenthientai = content.innerText  
+    content.innerHTML = contenthientai + "*"
+}
+cong.onclick = function() {
+    var contenthientai = content.innerText
+    content.innerHTML = contenthientai + "+"
+}
+tru.onclick = function() {
+    var contenthientai = content.innerText
+    content.innerHTML = contenthientai + "-"
+}
+
+phay.onclick = function() {
+    var contenthientai = content.innerText
+    content.innerHTML = contenthientai + "."
+}
+
+
+
+
+
+
+
+
+
+

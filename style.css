@@ -1,0 +1,111 @@
+:root{
+    --header-height: 140px;
+    --body-height: calc(100% - var(--header-height))
+}
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(84, 84, 84, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 610px;
+}
+
+.maindiv { 
+    background-color: black;
+    width: 203px;
+    height: 390px;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgb(63, 63, 62);
+}
+/*header*/
+.header{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 140px;
+    border-radius: 20px 20px 0 0 ;
+}
+
+
+.diablog .unworking{
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    height: 30px;
+    color: white;
+    display: none;
+}
+.diablog ion-icon{
+    margin-right: 2px;
+    height: 98%;
+}
+
+.diablog.diablog--unwork .unworking {
+    display: flex;
+}
+
+/*body*/
+.body{
+    
+    width: 100%;
+    height: var(--body-height);
+    border-radius: 0 0  10px 10px;
+}
+
+.button_list{
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.button_item{
+    margin-top: 8px;
+}
+
+.button_item button{
+    font-size: 20px;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    border:unset;
+}
+
+.button_bottom{
+    margin: 0;
+    padding: 0;
+    margin-top: 6px;
+    margin-left: 0;
+}
+.button_bottom button{
+    padding: 0 17px;
+    border: unset;
+    border-radius: 50%;
+    width: 41px;
+    height: 41px;
+}
+
+.big_button button{
+    text-align: left;
+    font-size: 20px;
+    border-radius:20px;
+    width: 90px;
+}
+
+
+.Showup {
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
